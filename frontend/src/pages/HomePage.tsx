@@ -1,4 +1,3 @@
-// pages/HomePage.tsx
 import React, { useState } from "react";
 import EntityForm from "../components/EntityForm";
 import EntityManager from "../components/EntityManager";
@@ -15,7 +14,7 @@ const HomePage: React.FC = () => {
       <h1 className="text-2xl font-bold mb-4">Basic Headless CMS</h1>
       <div className="grid grid-cols-2 gap-8">
         <div>
-          <h2 className="text-xl font-semibold mb-4">Create Entity</h2>
+          <h2 className="text-xl font-semibold mb-4">Create Table</h2>
           <EntityForm />
         </div>
         <div>

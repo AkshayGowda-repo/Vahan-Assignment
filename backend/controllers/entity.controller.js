@@ -1,4 +1,3 @@
-// controllers/entity.controller.js
 const db = require("../models");
 const { Sequelize } = db;
 
@@ -39,7 +38,6 @@ exports.createEntry = async (req, res) => {
   if (!model) return res.status(404).json({ message: "Entity not found" });
 
   try {
-    // Ensure mobileNumber and dateOfBirth are parsed correctly
     if (req.body.mobileNumber) {
       req.body.mobileNumber = parseInt(req.body.mobileNumber, 10);
     }
@@ -77,7 +75,6 @@ exports.updateEntry = async (req, res) => {
   if (!model) return res.status(404).json({ message: "Entity not found" });
 
   try {
-    // Ensure mobileNumber and dateOfBirth are parsed correctly
     if (req.body.mobileNumber) {
       req.body.mobileNumber = parseInt(req.body.mobileNumber, 10);
     }

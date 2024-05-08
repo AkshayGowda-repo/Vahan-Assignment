@@ -1,4 +1,3 @@
-// models/index.js
 const Sequelize = require("sequelize");
 const dbConfig = require("../config/db.config");
 
@@ -49,6 +48,6 @@ function createPersonEntity() {
   Person.sync(); // Create table if not exists
 }
 
-createPersonEntity(); // Pre-create the "Person" entity
+createPersonEntity(); // default the "Person" entity
 
 module.exports = db;

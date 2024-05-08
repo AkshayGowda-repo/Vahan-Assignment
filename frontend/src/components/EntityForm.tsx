@@ -1,4 +1,3 @@
-// components/EntityForm.tsx
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -58,13 +57,13 @@ const EntityForm: React.FC = () => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium">Attributes</label>
+        <label className="block text-sm font-medium">Fields </label>
         {attributes.map((attr, index) => (
           <div key={index} className="flex space-x-4 mb-2">
             <input
               type="text"
               className="block w-1/2 px-3 py-2 border rounded-md"
-              placeholder="Attribute Name"
+              placeholder="Field Name"
               value={attr.name}
               onChange={(e) =>
                 handleAttributeChange(index, "name", e.target.value)
@@ -106,7 +105,7 @@ const EntityForm: React.FC = () => {
         type="submit"
         className="px-4 py-2 bg-blue-500 text-white rounded-md"
       >
-        Create Entity
+        Create Table
       </button>
     </form>
   );
